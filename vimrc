@@ -64,13 +64,7 @@ if has("autocmd")
   augroup END
 endif
 
-"autocmd FileType python call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-"autocmd FileType javascript call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-"autocmd FileType html call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-"autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-"autocmd FileType xml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-"autocmd FileType php call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-"autocmd FileType c call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
 filetype plugin on
 
