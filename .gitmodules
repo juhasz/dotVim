@@ -13,3 +13,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/indexedSearch"]
+	path = bundle/indexedSearch
+	url = https://github.com/vim-scripts/IndexedSearch.git
