@@ -79,3 +79,7 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+" vim-autoclose bugfix for ubuntu
+if !has("gui_running")
+  let g:AutoClosePreservDotReg = 0
+endif
