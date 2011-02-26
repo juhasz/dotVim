@@ -10,3 +10,6 @@
 [submodule "bundle/frugitive"]
 	path = bundle/frugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
