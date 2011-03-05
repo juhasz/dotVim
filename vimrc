@@ -17,10 +17,14 @@ set wrap
 set linebreak
 set showbreak=…
 
-map <Down> gj
-map <Up> gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+inoremap <Down> <Esc>gja
+inoremap <Up> <Esc>gka
 
+" szamok incrementalasa byobu alatt is (c-a atirhatatlan byobu parancs)
 map <c-c> <c-a>
+
 map <c-l> <c-w>l<c-w>50>
 map <c-h> <c-w>h<c-w>50>
 map <c-j> <c-w>j<c-w>20+
@@ -29,7 +33,7 @@ nnoremap <Leader>vs <c-w>25>
 nnoremap <Leader>hs <c-w>10+
 
 " kodblokk osszecsukasa
-map <c-b> zf%
+map <c-f> zf%
 map <BS> zfa{
 
 " sorvegi szokozok automatikus kiemelese
@@ -67,6 +71,9 @@ endif
 autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
 filetype plugin on
+
+" tagbarra ugras
+inoremap <c-b> <ESC>:TagbarOpen<CR>
 
 " Source the vimrc file after saving it
 if has("autocmd")
