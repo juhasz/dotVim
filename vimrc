@@ -74,6 +74,7 @@ filetype plugin on
 
 " tagbarra ugras
 inoremap <c-b> <ESC>:TagbarOpen<CR>
+nnoremap <c-b> :TagbarOpen<CR>
 
 " Source the vimrc file after saving it
 if has("autocmd")
