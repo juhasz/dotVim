@@ -10,7 +10,7 @@ set tabstop=2
 set number
 set mouse=a
 set sw=2
-set directory=~/.vimbackup
+set directory=~/.vimbackup//
 set ignorecase
 set smartcase
 set wrap
