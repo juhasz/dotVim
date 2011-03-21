@@ -17,10 +17,10 @@ set wrap
 set linebreak
 set showbreak=…
 
-nnoremap <Down> gj
-nnoremap <Up> gk
 inoremap <Down> <Esc>gja
 inoremap <Up> <Esc>gka
+noremap <Down> gj
+noremap <Up> gk
 
 " szamok incrementalasa byobu alatt is (c-a atirhatatlan byobu parancs)
 map <c-c> <c-a>
@@ -33,8 +33,8 @@ nnoremap <Leader>vs <c-w>25>
 nnoremap <Leader>hs <c-w>10+
 
 " kodblokk osszecsukasa
-map <c-f> zf%
-map <BS> zfa{
+nnoremap <c-f> zf%
+nnoremap <BS> zfa{
 
 " sorvegi szokozok automatikus kiemelese
 highlight ExtraWhitespace ctermbg=red guibg=red
