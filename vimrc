@@ -17,6 +17,10 @@ set wrap
 set linebreak
 set showbreak=…
 
+"statusline
+set statusline=%F%m%r%h%w\ t-%Y\ l-%04l\ c-%04v\ %p%%\ l-%L
+set laststatus=2
+
 inoremap <Down> <Esc>gja
 inoremap <Up> <Esc>gka
 noremap <Down> gj
