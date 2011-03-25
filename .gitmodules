@@ -1,6 +1,3 @@
-[submodule "bundle/autoclose"]
-	path = bundle/autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim
@@ -16,9 +13,6 @@
 [submodule "bundle/indexedSearch"]
 	path = bundle/indexedSearch
 	url = https://github.com/vim-scripts/IndexedSearch.git
-[submodule "bundle/vimgit"]
-	path = bundle/vimgit
-	url = https://github.com/tpope/vim-git.git
 [submodule "bundle/css3"]
 	path = bundle/css3
 	url = https://github.com/vim-scripts/css3
