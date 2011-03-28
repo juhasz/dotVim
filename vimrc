@@ -2,6 +2,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+syntax on
 set autoindent
 set smartindent
 set expandtab
@@ -83,9 +84,4 @@ nnoremap <c-b> :TagbarOpen<CR>
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
-endif
-
-" vim-autoclose bugfix for ubuntu
-if !has("gui_running")
-  let g:AutoClosePreservDotReg = 0
 endif
