@@ -19,11 +19,9 @@ set linebreak
 set showbreak=…
 
 "statusline
-set statusline=%F%m%r%h%w\ t-%Y\ l-%04l\ c-%04v\ %p%%\ l-%L
+set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
 set laststatus=2
 
-inoremap <Down> <Esc>gja
-inoremap <Up> <Esc>gka
 noremap <Down> gj
 noremap <Up> gk
 
@@ -85,3 +83,9 @@ nnoremap <c-b> :TagbarOpen<CR>
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
+" vim-autoclose bugfix for xterm
+if !has("gui_running")
+  let g:AutoClosePreservDotReg = 0
+endif
+
