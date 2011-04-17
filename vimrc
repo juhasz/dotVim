@@ -12,28 +12,35 @@ set number
 set mouse=a
 set sw=2
 set directory=~/.vimbackup//
-set ignorecase
-set smartcase
 set wrap
 set linebreak
 set showbreak=…
 
-"statusline
+" statusline
 set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
 set laststatus=2
 
+" navigation
 noremap <Down> gj
 noremap <Up> gk
+set so=7
+
+map <c-l> <c-w>l<c-w>
+map <c-h> <c-w>h<c-w>
+map <c-j> <c-w>j<c-w>
+map <c-k> <c-w>k<c-w>
+
+nnoremap <Leader>tn :tabnew.<CR>
+
+" search
+set ignorecase
+set smartcase
+set hlsearch
+nnoremap <Leader>s :nohlsearch<CR>
+set incsearch
 
 " szamok incrementalasa byobu alatt is (c-a atirhatatlan byobu parancs)
 map <c-c> <c-a>
-
-map <c-l> <c-w>l<c-w>50>
-map <c-h> <c-w>h<c-w>50>
-map <c-j> <c-w>j<c-w>20+
-map <c-k> <c-w>k<c-w>20+
-nnoremap <Leader>vs <c-w>25>
-nnoremap <Leader>hs <c-w>10+
 
 " kodblokk osszecsukasa
 nnoremap <c-f> zf%
@@ -74,10 +81,6 @@ endif
 autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
 filetype plugin on
-
-" tagbarra ugras
-inoremap <c-b> <ESC>:TagbarOpen<CR>
-nnoremap <c-b> :TagbarOpen<CR>
 
 " Source the vimrc file after saving it
 if has("autocmd")
