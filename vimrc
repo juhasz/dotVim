@@ -15,7 +15,6 @@ set directory=~/.vimbackup//
 set wrap
 set linebreak
 set showbreak=…
-call togglebg#map("<Leader>tb")
 
 " statusline
 set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
