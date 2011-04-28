@@ -2,6 +2,7 @@ set background=dark
 colorscheme solarized
 set guifont=monaco:h16
 set guioptions=egmrt
+call togglebg#map("<F5>")
 
 " sorvegi szokozok automatikus kiemelese
 highlight ExtraWhitespace ctermbg=red guibg=red

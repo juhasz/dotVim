@@ -15,6 +15,7 @@ set directory=~/.vimbackup//
 set wrap
 set linebreak
 set showbreak=…
+color solarized
 
 " statusline
 set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
