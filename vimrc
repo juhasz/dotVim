@@ -16,6 +16,7 @@ set wrap
 set linebreak
 set showbreak=…
 color solarized
+call togglebg#map("")
 
 " statusline
 set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
