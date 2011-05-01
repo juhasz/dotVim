@@ -54,11 +54,10 @@ match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 " sorvegi szokozok kiemelesenek ki/bekapcsolasa
-nnoremap <Leader>wn :match ExtraWhitespace /\s\+$/<CR>
-nnoremap <Leader>wf :match<CR>
-
-" sorvegi szokozok automatikus torlese
-autocmd BufWritePre * :%s/\s\+$//e
+nnoremap <Leader>ws :match ExtraWhitespace /\s\+$/<CR>
+nnoremap <Leader>wh :match<CR>
+" sorvegi szokozok torlese
+nnoremap <Leader>wr :%s/\s\+$//e<CR>
 
 " kijelolt szoveg csereje
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
