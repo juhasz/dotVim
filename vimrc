@@ -71,6 +71,17 @@ nnoremap <Leader>wr :%s/\s\+$//e<CR>
 " kijelolt szoveg csereje
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
+" frugitive mappings
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gp :diffput<CR>:diffupdate<CR>
+vnoremap <Leader>gp :diffput<CR>:diffupdate<CR>
+nnoremap <Leader>gg0 :diffget //0<CR>:diffupdate<CR>
+nnoremap <Leader>gg2 :diffget //2<CR>:diffupdate<CR>
+nnoremap <Leader>gg3 :diffget //3<CR>:diffupdate<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
