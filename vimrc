@@ -1,22 +1,30 @@
-" pathogen plugin bekapcsolasa -> pluguneket mappankent lehet kezelni
+" pathogen plugin
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" color settings (solarized)
+let solarized_diffmode="high"
+set background=dark
+colorscheme solarized
+call togglebg#map("")
+
+" appereance
 syntax on
+set number
+set cursorline
+set wrap
+set linebreak
+set showbreak=…
+
+
 set autoindent
 set smartindent
 set expandtab
 set softtabstop=2
 set tabstop=2
-set number
 set mouse=a
 set sw=2
 set directory=~/.vimbackup//
-set wrap
-set linebreak
-set showbreak=…
-color solarized
-call togglebg#map("")
 
 " statusline
 set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
@@ -32,7 +40,8 @@ map <c-h> <c-w>h
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 
-nnoremap <Leader>tn :tabnew.<CR>
+nnoremap <Leader>nt :tabnew.<CR>
+nnoremap <Leader>ns :vne.<CR>
 
 " search
 set ignorecase
@@ -71,7 +80,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 if has("autocmd")
-  " Drupal *.module and *.install files.
+  " Drupal *.module, *.test and *.install files.
   augroup module
     autocmd BufRead,BufNewFile *.module set filetype=php
     autocmd BufRead,BufNewFile *.install set filetype=php
