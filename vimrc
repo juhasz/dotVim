@@ -27,7 +27,7 @@ set sw=2
 set directory=~/.vimbackup//
 
 " statusline
-set statusline=%F%m%r%h%w\ %Y\ %l\/%v\ %p%%\ %Ll
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 " navigation
