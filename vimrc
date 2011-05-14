@@ -42,6 +42,8 @@ map <c-k> <c-w>k
 
 nnoremap <Leader>nt :tabnew.<CR>
 nnoremap <Leader>ns :vne.<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>
 
 " search
 set ignorecase
