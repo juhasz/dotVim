@@ -81,6 +81,7 @@ nnoremap <Leader>gg0 :diffget //0<CR>:diffupdate<CR>
 nnoremap <Leader>gg2 :diffget //2<CR>:diffupdate<CR>
 nnoremap <Leader>gg3 :diffget //3<CR>:diffupdate<CR>
 nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>ge :Gedit<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 
