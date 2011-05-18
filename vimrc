@@ -84,6 +84,12 @@ nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 
+" quickfix list navigation
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
+nnoremap [Q :cfirst<CR>
+nnoremap ]Q :clast<CR>
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
