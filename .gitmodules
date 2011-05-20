@@ -31,3 +31,6 @@
 [submodule "bundle/phpsyntax"]
 	path = bundle/phpsyntax
 	url = https://github.com/vim-scripts/php.vim--Garvin.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
