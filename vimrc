@@ -85,6 +85,10 @@ nnoremap <Leader>ge :Gedit<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 
+" syntastic settings
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+
 " quickfix list navigation
 nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
