@@ -34,3 +34,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/syntastyc"]
+	path = bundle/syntastyc
+	url = https://github.com/scrooloose/syntastic.git
