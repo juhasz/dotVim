@@ -12,6 +12,7 @@ call togglebg#map("")
 syntax on
 set number
 set cursorline
+set cursorcolumn
 set wrap
 set linebreak
 set showbreak=…
