@@ -41,10 +41,13 @@ map <c-h> <c-w>h
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 
+" lazy commands
 nnoremap <Leader>nt :tabnew.<CR>
 nnoremap <Leader>ns :vne.<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :x<CR>
+nnoremap ; :
+vnoremap ; :
+inoremap ;; <Esc>:
+inoremap jj <Esc>
 
 " search
 set ignorecase
@@ -126,4 +129,5 @@ endif
 if !has("gui_running")
   let g:AutoClosePreservDotReg = 0
 endif
+
 
