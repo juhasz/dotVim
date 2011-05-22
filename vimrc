@@ -29,6 +29,7 @@ set tabstop=2
 set mouse=a
 set sw=2
 set directory=~/.vimbackup//
+set undofile
 set pastetoggle=<Leader>p
 
 " statusline
