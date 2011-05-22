@@ -115,6 +115,10 @@ nnoremap ]Q :clast<CR>
 " Command-T settings
 let g:CommandTMaxHeight=15
 
+" gundo mappings
+nnoremap <Leader>u :GundoToggle<CR>
+inoremap <Leader>u <Esc>:GundoToggle<CR>
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
