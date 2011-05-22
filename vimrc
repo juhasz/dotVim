@@ -2,6 +2,9 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+set nocompatible
+set modelines=0
+
 " color settings (solarized)
 let solarized_diffmode="high"
 set background=dark
@@ -10,7 +13,7 @@ call togglebg#map("")
 
 " appereance
 syntax on
-set number
+set relativenumber
 set cursorline
 set cursorcolumn
 set wrap
@@ -26,6 +29,7 @@ set tabstop=2
 set mouse=a
 set sw=2
 set directory=~/.vimbackup//
+set pastetoggle=<Leader>p
 
 " statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -35,6 +39,9 @@ set laststatus=2
 noremap <Down> gj
 noremap <Up> gk
 set so=7
+nnoremap j gj
+nnoremap k gk
+set scrolloff=7
 
 map <c-l> <c-w>l
 map <c-h> <c-w>h
@@ -129,5 +136,3 @@ endif
 if !has("gui_running")
   let g:AutoClosePreservDotReg = 0
 endif
-
-
