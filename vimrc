@@ -36,9 +36,14 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 " navigation
-noremap <Down> gj
-noremap <Up> gk
-set so=7
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 set scrolloff=7
