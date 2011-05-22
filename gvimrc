@@ -1,7 +1,7 @@
 set background=dark
 colorscheme solarized
-set guifont=monaco:h16
-set guioptions=egmrt
+set guifont=menlo:h13
+set guioptions=egt
 call togglebg#map("<F5>")
 
 " sorvegi szokozok automatikus kiemelese
