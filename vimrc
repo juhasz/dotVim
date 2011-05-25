@@ -102,6 +102,11 @@ nnoremap <Leader>ge :Gedit<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 
+" gist settings
+let g:gist_clip_command = 'pbcopy' "mac only
+let g:gist_detect_filetype = 1
+let g:gist_show_privates = 1
+
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
