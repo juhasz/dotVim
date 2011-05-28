@@ -22,6 +22,7 @@ set wrap
 set linebreak
 set showbreak=…
 set grepprg=grep\ -nH\ $*
+set scrolloff=7
 
 
 set autoindent
@@ -44,18 +45,23 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+vnoremap <up> <nop>
+vnoremap <down> <nop>
+vnoremap <left> <nop>
+vnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
-set scrolloff=7
+vnoremap j gj
+vnoremap k gk
 
-map <c-l> <c-w>l
-map <c-h> <c-w>h
-map <c-j> <c-w>j
-map <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
 
 " lazy commands
 nnoremap <Leader>nt :tabnew.<CR>
