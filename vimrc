@@ -5,6 +5,8 @@ call pathogen#helptags()
 set nocompatible
 set modelines=0
 
+filetype plugin on
+
 " color settings (solarized)
 let solarized_diffmode="high"
 set background=dark
@@ -19,6 +21,7 @@ set cursorcolumn
 set wrap
 set linebreak
 set showbreak=…
+set grepprg=grep\ -nH\ $*
 
 
 set autoindent
@@ -142,8 +145,6 @@ if has("autocmd")
 endif
 
 autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-
-filetype plugin on
 
 " Source the vimrc file after saving it
 if has("autocmd")
