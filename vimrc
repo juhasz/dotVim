@@ -11,7 +11,7 @@ filetype plugin on
 let solarized_diffmode="high"
 set background=dark
 colorscheme solarized
-call togglebg#map("")
+call togglebg#map("<Leader>tb")
 
 " appereance
 syntax on
@@ -36,7 +36,7 @@ set mouse=a
 set sw=2
 set directory=~/.vimbackup//
 set undofile
-set pastetoggle=<Leader>p
+set pastetoggle=<Leader>tp
 
 " statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -55,6 +55,7 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
@@ -124,8 +125,29 @@ nnoremap ]Q :clast<CR>
 let g:CommandTMaxHeight=15
 
 " gundo mappings
-nnoremap <Leader>u :GundoToggle<CR>
-inoremap <Leader>u <Esc>:GundoToggle<CR>
+nnoremap <Leader>tu :GundoToggle<CR>
+inoremap <Leader>tu <Esc>:GundoToggle<CR>
+
+" some toggle mappings
+nnoremap <Leader>tn :call VimrcToggle('number')<CR>
+nnoremap <Leader>tl :call VimrcToggle('list')<CR>
+
+" Toggle function
+function! VimrcToggle(type)
+  if a:type == 'number'
+    if &number
+      set relativenumber
+    else
+      set number
+    endif
+  elseif a:type == 'list'
+    if &list
+      set nolist
+    else
+      set list
+    endif
+  endif
+endfunction
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -150,4 +172,3 @@ autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
-
