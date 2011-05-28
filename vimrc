@@ -156,8 +156,3 @@ autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
-
-" vim-autoclose bugfix for xterm
-if !has("gui_running")
-  let g:AutoClosePreservDotReg = 0
-endif
