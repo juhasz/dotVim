@@ -23,6 +23,8 @@ set linebreak
 set showbreak=…
 set grepprg=grep\ -nH\ $*
 set scrolloff=7
+set list
+set listchars=trail:.
 
 
 set autoindent
@@ -85,14 +87,6 @@ map <c-c> <c-a>
 nnoremap <c-f> zf%
 nnoremap <BS> zfa{
 
-" sorvegi szokozok automatikus kiemelese
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-" sorvegi szokozok kiemelesenek ki/bekapcsolasa
-nnoremap <Leader>ws :match ExtraWhitespace /\s\+$/<CR>
-nnoremap <Leader>wh :match<CR>
 " sorvegi szokozok torlese
 nnoremap <Leader>wr :%s/\s\+$//e<CR>
 
@@ -156,3 +150,4 @@ autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
