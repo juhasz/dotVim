@@ -24,7 +24,7 @@ set showbreak=…
 set grepprg=grep\ -nH\ $*
 set scrolloff=7
 set list
-set listchars=trail:.
+set listchars=tab:\ \ ,trail:.
 
 
 set autoindent
