@@ -67,12 +67,17 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
 " lazy commands
-nnoremap <Leader>nt :tabnew.<CR>
-nnoremap <Leader>ns :vne.<CR>
 nnoremap ; :
 vnoremap ; :
 inoremap ;; <Esc>:
 inoremap jj <Esc>
+
+" Command-T settings
+let g:CommandTMaxHeight=15
+nnoremap <Leader>nt :tabnew<CR>:CommandT<CR>
+nnoremap <Leader>ns :vne<CR>:CommandT<CR>
+nnoremap <Leader>nh :sp<CR>:CommandT<CR>
+nnoremap <Leader>e :CommandT<CR>
 
 " search
 set ignorecase
@@ -120,9 +125,6 @@ nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
 nnoremap [Q :cfirst<CR>
 nnoremap ]Q :clast<CR>
-
-" Command-T settings
-let g:CommandTMaxHeight=15
 
 " gundo mappings
 nnoremap <Leader>tu :GundoToggle<CR>
