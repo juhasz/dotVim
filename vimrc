@@ -71,6 +71,7 @@ nnoremap ; :
 vnoremap ; :
 inoremap ;; <Esc>:
 inoremap jj <Esc>
+inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
 
 " Command-T settings
 let g:CommandTMaxHeight=15
