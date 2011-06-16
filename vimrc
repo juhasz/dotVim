@@ -75,6 +75,7 @@ inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
 
 " Command-T settings
 let g:CommandTMaxHeight=15
+let g:CommandTMatchWindowReverse=1
 nnoremap <Leader>nt :tabnew<CR>:CommandT<CR>
 nnoremap <Leader>ns :vne<CR>:CommandT<CR>
 nnoremap <Leader>nh :sp<CR>:CommandT<CR>
