@@ -34,7 +34,8 @@ set softtabstop=2
 set tabstop=2
 set mouse=a
 set sw=2
-set directory=~/.vimbackup//
+set directory=~/.vim/backupdir//
+set undodir=~/.vim/undodir//
 set undofile
 set pastetoggle=<Leader>tp
 
