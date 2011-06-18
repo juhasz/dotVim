@@ -24,7 +24,7 @@ set showbreak=…
 set grepprg=grep\ -nH\ $*
 set scrolloff=7
 set list
-set listchars=tab:\ \ ,trail:.
+set listchars=tab:\ \ ,trail:·
 
 
 set autoindent
@@ -135,6 +135,7 @@ inoremap <Leader>tu <Esc>:GundoToggle<CR>
 " some toggle mappings
 nnoremap <Leader>tn :call VimrcToggle('number')<CR>
 nnoremap <Leader>tl :call VimrcToggle('list')<CR>
+autocmd BufRead,BufNewFile * let b:listCharStyle=1
 
 " Toggle function
 function! VimrcToggle(type)
@@ -145,10 +146,16 @@ function! VimrcToggle(type)
       set number
     endif
   elseif a:type == 'list'
-    if &list
-      set nolist
-    else
+    if b:listCharStyle == 0
       set list
+      set listchars=tab:\ \ ,trail:·
+      let b:listCharStyle=1
+    elseif b:listCharStyle == 1
+      set listchars=tab:▸\ ,eol:¬,trail:·
+      let b:listCharStyle=2
+    elseif b:listCharStyle == 2
+      set nolist
+      let b:listCharStyle=0
     endif
   endif
 endfunction
