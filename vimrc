@@ -176,6 +176,15 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.install set filetype=php
     autocmd BufRead,BufNewFile *.test set filetype=php
   augroup END
+
+  augroup text
+    autocmd BufRead,BufNewFile *.markdown set noexpandtab
+    autocmd BufRead,BufNewFile *.markdown set tabstop=4
+    autocmd BufRead,BufNewFile *.markdown set softtabstop=4
+    autocmd BufRead,BufNewFile *.markdown set shiftwidth=4
+    autocmd BufRead,BufNewFile *.markdown let b:listCharStyle=1
+    autocmd BufRead,BufNewFile *.markdown call VimrcToggle('list')
+  augroup END
 endif
 
 autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
