@@ -33,7 +33,7 @@ set expandtab
 set softtabstop=2
 set tabstop=2
 set mouse=a
-set sw=2
+set shiftwidth=2
 set directory=~/.vim/backupdir//
 set undodir=~/.vim/undodir//
 set undofile
@@ -42,6 +42,7 @@ set pastetoggle=<Leader>tp
 " statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
+set showcmd
 
 " navigation
 nnoremap <up> <nop>
@@ -118,6 +119,7 @@ nnoremap <Leader>gc :Gcommit<CR>
 let g:gist_clip_command = 'pbcopy' "mac only
 let g:gist_detect_filetype = 1
 let g:gist_show_privates = 1
+let g:gist_open_browser_after_post = 1
 
 " syntastic settings
 let g:syntastic_enable_signs=1
@@ -152,9 +154,12 @@ function! VimrcToggle(type)
       set listchars=tab:\ \ ,trail:·
       let b:listCharStyle=1
     elseif b:listCharStyle == 1
-      set listchars=tab:▸\ ,eol:¬,trail:·
+      set listchars=tab:▸\ ,trail:·
       let b:listCharStyle=2
     elseif b:listCharStyle == 2
+      set listchars=tab:▸\ ,eol:¬,trail:·
+      let b:listCharStyle=3
+    elseif b:listCharStyle == 3
       set nolist
       let b:listCharStyle=0
     endif
@@ -191,5 +196,5 @@ autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
 " Source the vimrc file after saving it
 if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
+  autocmd bufwritepost vimrc source $MYVIMRC
 endif
