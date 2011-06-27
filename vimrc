@@ -4,6 +4,7 @@ call pathogen#helptags()
 
 set nocompatible
 set modelines=0
+let mapleader = ','
 
 filetype plugin on
 
