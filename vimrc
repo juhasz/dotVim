@@ -102,9 +102,6 @@ vnoremap / <esc>/\%V
 " autocomplete
 set infercase
 
-" szamok incrementalasa byobu alatt is (c-a atirhatatlan byobu parancs)
-map <c-c> <c-a>
-
 " kodblokk osszecsukasa
 nnoremap <c-f> zf%
 nnoremap <BS> zfa{
