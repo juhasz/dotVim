@@ -26,7 +26,7 @@ set scrolloff=7
 set list
 set listchars=tab:\ \ ,trail:·
 
-
+" indention
 set autoindent
 set smartindent
 set expandtab
@@ -34,6 +34,12 @@ set softtabstop=2
 set tabstop=2
 set mouse=a
 set shiftwidth=2
+vnoremap <TAB> >gv
+vnoremap <S-TAB> <gv
+vnoremap < <gv
+vnoremap > >gv
+
+
 set directory=~/.vim/backupdir//
 set undodir=~/.vim/undodir//
 set undofile
