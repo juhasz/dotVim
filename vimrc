@@ -95,6 +95,11 @@ set smartcase
 set hlsearch
 nnoremap <Leader>s :nohlsearch<CR>
 set incsearch
+set gdefault
+vnoremap / <esc>/\%V
+
+" autocomplete
+set infercase
 
 " szamok incrementalasa byobu alatt is (c-a atirhatatlan byobu parancs)
 map <c-c> <c-a>
