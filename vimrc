@@ -131,6 +131,9 @@ let g:gist_detect_filetype = 1
 let g:gist_show_privates = 1
 let g:gist_open_browser_after_post = 1
 
+" dim settings
+let g:DrupalDefaultRoot = '~/Sites/d7p'
+
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
