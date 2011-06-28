@@ -55,3 +55,6 @@
 [submodule "bundle/vim_markdown"]
 	path = bundle/vim_markdown
 	url = https://github.com/hallison/vim-markdown.git
+[submodule "bundle/Dim"]
+	path = bundle/Dim
+	url = git@github.com:juhasz/Dim.git
