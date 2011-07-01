@@ -58,3 +58,6 @@
 [submodule "bundle/Dim"]
 	path = bundle/Dim
 	url = git@github.com:juhasz/Dim.git
+[submodule "bundle/mmd_vim"]
+	path = bundle/mmd_vim
+	url = git@github.com:juhasz/mmd_vim.git
