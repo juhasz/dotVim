@@ -113,7 +113,7 @@ nnoremap <Leader>wr :%s/\s\+$//e<CR>
 " kijelolt szoveg csereje
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
-" frugitive mappings
+" fugitive mappings
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gp :diffput<CR>:diffupdate<CR>
 vnoremap <Leader>gp :diffput<CR>:diffupdate<CR>
@@ -143,6 +143,12 @@ nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
 nnoremap [Q :cfirst<CR>
 nnoremap ]Q :clast<CR>
+
+" location list navigation
+nnoremap [l :lprev<CR>
+nnoremap ]l :lnext<CR>
+nnoremap [L :lfirst<CR>
+nnoremap ]L :llast<CR>
 
 " gundo mappings
 nnoremap <Leader>tu :GundoToggle<CR>
