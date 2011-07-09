@@ -78,8 +78,10 @@ nnoremap <c-k> <c-w>k
 " lazy commands
 nnoremap ; :
 vnoremap ; :
+nnoremap : ;
+vnoremap : ;
 inoremap jj <Esc>
-inoremap jk <Esc>:
+inoremap jk <Esc>
 inoremap ;; <C-o>
 inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
 
