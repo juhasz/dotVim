@@ -135,6 +135,7 @@ let g:gist_open_browser_after_post = 1
 
 " dim settings
 let g:DrupalDefaultRoot = '~/Sites/d7p'
+let g:DrupalOpenSearchWith = 'tabnew'
 
 " syntastic settings
 let g:syntastic_enable_signs=1
