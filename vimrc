@@ -65,21 +65,14 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
-
 nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
 " lazy commands
-nnoremap ; :
-vnoremap ; :
-nnoremap : ;
-vnoremap : ;
+nnoremap <Space> :
+vnoremap <Space> :
 inoremap jj <Esc>
 inoremap jk <Esc>
 inoremap ;; <C-o>
@@ -104,10 +97,6 @@ vnoremap / <esc>/\%V
 
 " autocomplete
 set infercase
-
-" kodblokk osszecsukasa
-nnoremap <c-f> zf%
-nnoremap <BS> zfa{
 
 " sorvegi szokozok torlese
 nnoremap <Leader>wr :%s/\s\+$//e<CR>
