@@ -129,6 +129,7 @@ let g:DrupalOpenSearchWith = 'tabnew'
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
+let g:syntastic_disabled_filetypes = ['html']
 
 " quickfix list navigation
 nnoremap [q :cprev<CR>
