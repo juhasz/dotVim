@@ -210,3 +210,5 @@ autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 if has("autocmd")
   autocmd bufwritepost vimrc source $MYVIMRC
 endif
+
+command! Ql w | silent !qlmanage -p %
