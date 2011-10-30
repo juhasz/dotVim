@@ -194,12 +194,13 @@ if has("autocmd")
   augroup END
 
   augroup text
-    autocmd BufRead,BufNewFile *.markdown set noexpandtab
-    autocmd BufRead,BufNewFile *.markdown set tabstop=4
-    autocmd BufRead,BufNewFile *.markdown set softtabstop=4
-    autocmd BufRead,BufNewFile *.markdown set shiftwidth=4
-    autocmd BufRead,BufNewFile *.markdown let b:listCharStyle=1
-    autocmd BufRead,BufNewFile *.markdown call VimrcToggle('list')
+    autocmd BufRead,BufNewFile *.markdown,*.txt set filetype=markdown
+    autocmd BufRead,BufNewFile *.markdown,*.txt set noexpandtab
+    autocmd BufRead,BufNewFile *.markdown,*.txt set tabstop=4
+    autocmd BufRead,BufNewFile *.markdown,*.txt set softtabstop=4
+    autocmd BufRead,BufNewFile *.markdown,*.txt set shiftwidth=4
+    autocmd BufRead,BufNewFile *.markdown,*.txt let b:listCharStyle=1
+    autocmd BufRead,BufNewFile *.markdown,*.txt call VimrcToggle('list')
   augroup END
 endif
 
