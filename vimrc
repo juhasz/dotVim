@@ -122,6 +122,9 @@ let g:gist_detect_filetype = 1
 let g:gist_show_privates = 1
 let g:gist_open_browser_after_post = 1
 
+" mmd_vim settings
+let g:mmdOpenCommand = 'qlmanage -p'
+
 " dim settings
 let g:DrupalDefaultRoot = '~/Sites/d7p'
 let g:DrupalOpenSearchWith = 'tabnew'
