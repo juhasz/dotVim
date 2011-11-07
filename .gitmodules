@@ -58,9 +58,3 @@
 [submodule "bundle/mmd_vim"]
 	path = bundle/mmd_vim
 	url = https://github.com/juhasz/mmd_vim.git
-[submodule "bundle/vim-snipmate"]
-	path = bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
-[submodule "bundle/drupal-snippets"]
-	path = bundle/drupal-snippets
-	url = https://github.com/tanarurkerem/drupal-snippets.git
