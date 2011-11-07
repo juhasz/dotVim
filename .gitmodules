@@ -64,3 +64,6 @@
 [submodule "bundle/drupal_snippets"]
 	path = bundle/drupal_snippets
 	url = https://github.com/tanarurkerem/drupal-snippets.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
