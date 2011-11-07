@@ -1,8 +1,8 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/frugitive"]
-	path = bundle/frugitive
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
@@ -58,9 +58,9 @@
 [submodule "bundle/mmd_vim"]
 	path = bundle/mmd_vim
 	url = git@github.com:juhasz/mmd_vim.git
-[submodule "vim-snipmate"]
+[submodule "bundle/vim-snipmate"]
 	path = vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
-[submodule "drupal-snippets"]
+[submodule "bundle/drupal-snippets"]
 	path = drupal-snippets
 	url = https://github.com/tanarurkerem/drupal-snippets.git
