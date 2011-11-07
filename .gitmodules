@@ -58,3 +58,6 @@
 [submodule "bundle/mmd_vim"]
 	path = bundle/mmd_vim
 	url = git@github.com:juhasz/mmd_vim.git
+[submodule "vim-snipmate"]
+	path = vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
