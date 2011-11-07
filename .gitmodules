@@ -61,3 +61,6 @@
 [submodule "vim-snipmate"]
 	path = vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "drupal-snippets"]
+	path = drupal-snippets
+	url = https://github.com/tanarurkerem/drupal-snippets.git
