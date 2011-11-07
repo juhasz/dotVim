@@ -24,7 +24,7 @@
 	url = https://github.com/tpope/vim-git.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/phpsyntax"]
 	path = bundle/phpsyntax
 	url = https://github.com/vim-scripts/php.vim--Garvin.git
@@ -45,7 +45,7 @@
 	url = https://github.com/mattn/gist-vim.git
 [submodule "bundle/vimLaTex"]
 	path = bundle/vimLaTex
-	url = git@github.com:juhasz/vimLaTeX.git
+	url = https://juhasz@github.com/juhasz/vimLaTeX.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -54,10 +54,10 @@
 	url = https://github.com/hallison/vim-markdown.git
 [submodule "bundle/Dim"]
 	path = bundle/Dim
-	url = git@github.com:juhasz/Dim.git
+	url = https://juhasz@github.com/juhasz/Dim.git
 [submodule "bundle/mmd_vim"]
 	path = bundle/mmd_vim
-	url = git@github.com:juhasz/mmd_vim.git
+	url = https://juhasz@github.com/juhasz/mmd_vim.git
 [submodule "bundle/vim-snipmate"]
 	path = vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
