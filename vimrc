@@ -153,6 +153,13 @@ inoremap <Leader>tu <Esc>:GundoToggle<CR>
 " snipmate settings
 let g:snips_trigger_key='§'
 
+" tagbar settings
+nnoremap <Leader>tt :TagbarToggle<CR>
+nnoremap <Leader>to :TagbarOpen<CR>
+let g:tagbar_autofocus = 1
+let g:tagbar_autoshowtag = 1
+let g:tagbar_compact = 1
+
 " vim-indent-guides settings
 let g:indent_guides_color_change_percent = 2
 
