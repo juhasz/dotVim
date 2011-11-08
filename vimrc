@@ -193,13 +193,6 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 if has("autocmd")
-  " Drupal *.module, *.test and *.install files.
-  augroup module
-    autocmd BufRead,BufNewFile *.module set filetype=php
-    autocmd BufRead,BufNewFile *.install set filetype=php
-    autocmd BufRead,BufNewFile *.test set filetype=php
-  augroup END
-
   augroup text
     autocmd BufRead,BufNewFile *.markdown,*.txt set filetype=markdown
     autocmd BufRead,BufNewFile *.markdown,*.txt set noexpandtab
@@ -219,3 +212,4 @@ if has("autocmd")
 endif
 
 command! Ql w | silent !qlmanage -p %
+command! Lcd lcd %:p:h
