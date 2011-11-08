@@ -150,6 +150,9 @@ nnoremap ]L :llast<CR>
 nnoremap <Leader>tu :GundoToggle<CR>
 inoremap <Leader>tu <Esc>:GundoToggle<CR>
 
+" snipmate settings
+let g:snips_trigger_key='§'
+
 " some toggle mappings
 nnoremap <Leader>tn :call VimrcToggle('number')<CR>
 nnoremap <Leader>tl :call VimrcToggle('list')<CR>
