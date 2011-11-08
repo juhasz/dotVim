@@ -153,6 +153,9 @@ inoremap <Leader>tu <Esc>:GundoToggle<CR>
 " snipmate settings
 let g:snips_trigger_key='§'
 
+" vim-indent-guides settings
+let g:indent_guides_color_change_percent = 2
+
 " some toggle mappings
 nnoremap <Leader>tn :call VimrcToggle('number')<CR>
 nnoremap <Leader>tl :call VimrcToggle('list')<CR>
