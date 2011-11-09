@@ -9,7 +9,7 @@ let mapleader = ','
 filetype plugin on
 
 " color settings (solarized)
-let solarized_diffmode="high"
+let g:solarized_diffmode="high"
 set background=dark
 colorscheme solarized
 call togglebg#map("<Leader>tb")
