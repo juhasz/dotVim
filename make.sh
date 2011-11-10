@@ -2,8 +2,9 @@
 
 vimdir=`pwd`
 
-# get submodules
+# get and setup submodules
 git submodule update --init
+git submodule foreach git checkout master
 
 # create backup and undo directory
 mkdir undodir backupdir
@@ -11,7 +12,7 @@ mkdir undodir backupdir
 # create an empty file in doc directory for markdown plugin, fix a pathogen bug
 touch bundle/vim_markdown/doc/EmptyFileForFixPathogen.txt
 
-# set up command-t plugin
+# setup command-t plugin
 cd bundle/commandT/ruby/command-t
 ruby extconf.rb
 make
