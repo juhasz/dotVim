@@ -203,6 +203,9 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+autocmd FileType php call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+
 if has("autocmd")
   augroup text
     autocmd BufRead,BufNewFile *.markdown,*.txt set filetype=markdown
@@ -214,8 +217,6 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.markdown,*.txt call VimrcToggle('list')
   augroup END
 endif
-
-autocmd FileType css call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
 " Source the vimrc file after saving it
 if has("autocmd")
