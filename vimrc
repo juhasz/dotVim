@@ -40,11 +40,13 @@ vnoremap <S-TAB> <gv
 vnoremap < <gv
 vnoremap > >gv
 
+" autocomplete
+set infercase
 
+" undo- and backupfiles
 set directory=~/.vim/backupdir//
 set undodir=~/.vim/undodir//
 set undofile
-set pastetoggle=<Leader>tp
 
 " statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -70,23 +72,6 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
-" lazy commands
-nnoremap <Space> :
-vnoremap <Space> :
-inoremap jj <Esc>
-inoremap jk <Esc>
-inoremap ;; <C-o>
-inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
-inoremap ;<Tab> <C-X><C-O>
-
-" Command-T settings
-let g:CommandTMaxHeight=15
-let g:CommandTMatchWindowReverse=1
-nnoremap <Leader>nt :tabnew<CR>:CommandT<CR>
-nnoremap <Leader>ns :vne<CR>:CommandT<CR>
-nnoremap <Leader>nh :sp<CR>:CommandT<CR>
-nnoremap <Leader>e :CommandT<CR>
-
 " search
 set ignorecase
 set smartcase
@@ -96,14 +81,45 @@ set incsearch
 set gdefault
 vnoremap / <esc>/\%V
 
-" autocomplete
-set infercase
-
-" sorvegi szokozok torlese
+" remove trailing spaces
 nnoremap <Leader>wr :%s/\s\+$//e<CR>
 
-" kijelolt szoveg csereje
+" replace selected text
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
+" lazy commands
+set pastetoggle=<Leader>tp
+nnoremap <Space> :
+vnoremap <Space> :
+inoremap jj <Esc>
+inoremap jk <Esc>
+inoremap ;; <C-o>
+inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
+inoremap ;<Tab> <C-X><C-O>
+
+" quickfix list navigation
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
+nnoremap [Q :cfirst<CR>
+nnoremap ]Q :clast<CR>
+
+" location list navigation
+nnoremap [l :lprev<CR>
+nnoremap ]l :lnext<CR>
+nnoremap [L :lfirst<CR>
+nnoremap ]L :llast<CR>
+
+" Command-T settings
+let g:CommandTMaxHeight=15
+let g:CommandTMatchWindowReverse=1
+nnoremap <Leader>nt :tabnew<CR>:CommandT<CR>
+nnoremap <Leader>ns :vne<CR>:CommandT<CR>
+nnoremap <Leader>nh :sp<CR>:CommandT<CR>
+nnoremap <Leader>e :CommandT<CR>
+
+" dim settings
+let g:DrupalDefaultRoot = '~/Sites/d7p'
+let g:DrupalOpenSearchWith = 'tabnew'
 
 " fugitive mappings
 nnoremap <Leader>gd :Gdiff<CR>
@@ -123,36 +139,20 @@ let g:gist_detect_filetype = 1
 let g:gist_show_privates = 1
 let g:gist_open_browser_after_post = 1
 
+" gundo mappings
+nnoremap <Leader>tu :GundoToggle<CR>
+inoremap <Leader>tu <Esc>:GundoToggle<CR>
+
 " mmd_vim settings
 let g:mmdOpenCommand = 'qlmanage -p'
 
-" dim settings
-let g:DrupalDefaultRoot = '~/Sites/d7p'
-let g:DrupalOpenSearchWith = 'tabnew'
+" snipmate settings
+let g:snips_trigger_key='§'
 
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_disabled_filetypes = ['html']
-
-" quickfix list navigation
-nnoremap [q :cprev<CR>
-nnoremap ]q :cnext<CR>
-nnoremap [Q :cfirst<CR>
-nnoremap ]Q :clast<CR>
-
-" location list navigation
-nnoremap [l :lprev<CR>
-nnoremap ]l :lnext<CR>
-nnoremap [L :lfirst<CR>
-nnoremap ]L :llast<CR>
-
-" gundo mappings
-nnoremap <Leader>tu :GundoToggle<CR>
-inoremap <Leader>tu <Esc>:GundoToggle<CR>
-
-" snipmate settings
-let g:snips_trigger_key='§'
 
 " tagbar settings
 nnoremap <Leader>tt :TagbarToggle<CR>
