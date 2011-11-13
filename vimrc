@@ -8,6 +8,7 @@ let mapleader = ','
 
 set mouse=a
 filetype plugin on
+filetype indent on
 
 " color settings (solarized)
 let g:solarized_diffmode="high"
