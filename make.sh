@@ -18,9 +18,10 @@ ruby extconf.rb
 make
 cd $vimdir
 
-# create symlinks for vimrc and gvimrc
-rm ~/.vimrc ~/.gvimrc
+# create symlinks for vimrc, gvimrc and ctags config file
+rm ~/.vimrc ~/.gvimrc ~/.ctags
 ln -s $vimdir/vimrc ~/.vimrc
 ln -s $vimdir/gvimrc ~/.gvimrc
+ln -s $vimdir/ctags ~/.ctags
 
 exit 0

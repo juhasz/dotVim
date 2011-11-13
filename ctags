@@ -1,0 +1,13 @@
+-f ./tags
+--langmap=php:+.engine.inc.install.module.php.test.theme
+--recurse
+--exclude=devel
+--totals=yes
+--tag-relative=yes
+--PHP-kinds=+cdfi
+--languages=php
+--regex-PHP
+--regex-PHP=/(^|^[^\/*]+[[:blank:]])class[[:blank:]]+([[:alpha:]_][[:alnum:]_]*)/\2/c/
+--regex-PHP=/(^|^[^\/*]+[[:blank:]])define[[:blank:]]*\([[:blank:]]*['"]([[:alpha:]_][[:alnum:]_]*)/\2/d/
+--regex-PHP=/(^|^[^\/*]+[[:blank:]])function[[:blank:]]+&?[[:blank:]]*([[:alpha:]_][[:alnum:]_]*)/\2/f/
+--regex-PHP=/(^|^[^\/*]+[[:blank:]])interface[[:blank:]]+([[:alpha:]_][[:alnum:]_]*)/\2/i/
