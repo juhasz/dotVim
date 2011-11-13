@@ -6,6 +6,7 @@ set nocompatible
 set modelines=0
 let mapleader = ','
 
+set mouse=a
 filetype plugin on
 
 " color settings (solarized)
@@ -33,7 +34,6 @@ set smartindent
 set expandtab
 set softtabstop=2
 set tabstop=2
-set mouse=a
 set shiftwidth=2
 vnoremap <TAB> >gv
 vnoremap <S-TAB> <gv
