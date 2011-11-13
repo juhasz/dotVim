@@ -79,3 +79,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/php_indent"]
+	path = bundle/php_indent
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git
