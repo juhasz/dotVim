@@ -3,3 +3,6 @@
 
 " remap vim-latex-s <c-j> to my own
 nnoremap <c-j> <c-w>j
+
+" formatoptions after ftplugins
+autocmd BufRead,BufNewFile *.{module,install,test,inc,profile} setlocal formatoptions=clorq

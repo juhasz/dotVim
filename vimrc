@@ -40,6 +40,7 @@ vnoremap <TAB> >gv
 vnoremap <S-TAB> <gv
 vnoremap < <gv
 vnoremap > >gv
+let g:PHP_autoformatcomment = 0
 
 " autocomplete
 set infercase
