@@ -1,7 +1,7 @@
 -f ./tags
 --langmap=php:+.engine.inc.install.module.php.test.theme
 --recurse
---exclude=devel
+--exclude=coder
 --totals=yes
 --tag-relative=yes
 --PHP-kinds=+cdfi
