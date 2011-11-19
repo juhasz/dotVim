@@ -5,4 +5,6 @@
 nnoremap <c-j> <c-w>j
 
 " formatoptions after ftplugins
-autocmd BufRead,BufNewFile *.{module,install,test,inc,profile} setlocal formatoptions=clorq
+autocmd BufRead,BufNewFile *.{module,install,test,inc,profile,php} setlocal formatoptions=clorq
+autocmd BufRead,BufNewFile *.{module,install,test,inc,profile,php} setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+autocmd BufRead,BufNewFile *.{module,install,test,inc,profile,php} setlocal syntax=php.doxygen
