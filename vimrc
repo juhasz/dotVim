@@ -197,6 +197,7 @@ function! VimrcToggle(type)
   endif
 endfunction
 
+" FileType settings
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -205,22 +206,19 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-if has("autocmd")
-  augroup text
-    autocmd BufRead,BufNewFile *.markdown,*.txt set filetype=markdown
-    autocmd BufRead,BufNewFile *.markdown,*.txt set noexpandtab
-    autocmd BufRead,BufNewFile *.markdown,*.txt set tabstop=4
-    autocmd BufRead,BufNewFile *.markdown,*.txt set softtabstop=4
-    autocmd BufRead,BufNewFile *.markdown,*.txt set shiftwidth=4
-    autocmd BufRead,BufNewFile *.markdown,*.txt let b:listCharStyle=1
-    autocmd BufRead,BufNewFile *.markdown,*.txt call VimrcToggle('list')
-  augroup END
-endif
+augroup markdown
+  autocmd BufRead,BufNewFile *.txt set filetype=markdown
+  autocmd FileType markdown setlocal noexpandtab
+  autocmd FileType markdown setlocal tabstop=4
+  autocmd FileType markdown setlocal softtabstop=4
+  autocmd FileType markdown setlocal shiftwidth=4
+  autocmd FileType markdown let b:listCharStyle=1
+  autocmd FileType markdown call VimrcToggle('list')
+augroup END
 
 " Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost vimrc source $MYVIMRC
-endif
+autocmd bufwritepost vimrc source $MYVIMRC
 
+" User commands
 command! Ql w | silent !qlmanage -p %
 command! Lcd lcd %:p:h
