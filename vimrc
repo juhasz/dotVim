@@ -18,7 +18,6 @@ call togglebg#map("<Leader>tb")
 
 " appereance
 syntax on
-let g:load_doxygen_syntax = 1
 set relativenumber
 set cursorline
 set cursorcolumn
