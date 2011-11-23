@@ -158,7 +158,7 @@ let g:syntastic_disabled_filetypes = ['html']
 
 " tagbar settings
 nnoremap <Leader>tt :TagbarToggle<CR>
-nnoremap <Leader>to :TagbarOpen<CR>
+nnoremap <Leader>to :TagbarOpen fj<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoshowtag = 1
 let g:tagbar_compact = 1
