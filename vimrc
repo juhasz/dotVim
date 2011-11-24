@@ -205,6 +205,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType php set syntax=php.doxygen
+autocmd FileType php syntax sync fromstart
 
 augroup markdown
   autocmd BufRead,BufNewFile *.txt set filetype=markdown
