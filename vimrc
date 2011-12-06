@@ -171,6 +171,8 @@ let g:indent_guides_color_change_percent = 2
 nnoremap <Leader>tn :call VimrcToggle('number')<CR>
 nnoremap <Leader>tl :call VimrcToggle('list')<CR>
 autocmd BufRead,BufNewFile * let b:listCharStyle=1
+nnoremap <Leader>tdw :call VimrcToggle('diffWhite')<CR>
+let g:diff_ignore_white = 1
 
 " Toggle function
 function! VimrcToggle(type)
@@ -195,6 +197,15 @@ function! VimrcToggle(type)
       set nolist
       let b:listCharStyle=0
     endif
+  elseif a:type == 'diffWhite'
+    if g:diff_ignore_white == 1
+      set diffopt-=iwhite
+      let g:diff_ignore_white = 0
+    else
+      set diffopt+=iwhite
+      let g:diff_ignore_white = 1
+    endif
+    diffupdate
   endif
 endfunction
 
