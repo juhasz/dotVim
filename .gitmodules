@@ -82,3 +82,6 @@
 [submodule "bundle/php_indent"]
 	path = bundle/php_indent
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
+[submodule "bundle/DBGp_Remote_Debugger_Interface"]
+	path = bundle/DBGp_Remote_Debugger_Interface
+	url = https://github.com/blueyed/DBGp-Remote-Debugger-Interface.git
