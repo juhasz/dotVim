@@ -28,6 +28,7 @@ set grepprg=grep\ -nH\ $*
 set scrolloff=7
 set list
 set listchars=tab:\ \ ,trail:·
+set diffopt+=iwhite
 
 " indention
 set autoindent
