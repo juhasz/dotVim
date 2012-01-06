@@ -112,6 +112,9 @@ nnoremap ]l :lnext<CR>
 nnoremap [L :lfirst<CR>
 nnoremap ]L :llast<CR>
 
+" open in Marked.app
+nnoremap <Leader>ma :silent !open -a Marked.app '%:p'<cr>
+
 " Command-T settings
 let g:CommandTMaxHeight=15
 let g:CommandTMatchWindowReverse=1
