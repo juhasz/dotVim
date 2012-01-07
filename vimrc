@@ -171,6 +171,10 @@ let g:tagbar_compact = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_color_change_percent = 2
 
+" vimroom settings
+let g:vimroom_guibackground = '#fdf6e3'
+nnoremap <Leader>vr :call VRoom()<CR>
+
 " some toggle mappings
 nnoremap <Leader>tn :call VimrcToggle('number')<CR>
 nnoremap <Leader>tl :call VimrcToggle('list')<CR>
@@ -213,6 +217,14 @@ function! VimrcToggle(type)
   endif
 endfunction
 
+" VimRoom toggle
+function! VRoom()
+  ToggleBG
+  VimroomToggle
+  IndentGuidesToggle
+  set cursorcolumn!
+endfunction
+
 " FileType settings
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -240,3 +252,4 @@ autocmd bufwritepost vimrc source $MYVIMRC
 " User commands
 command! Ql w | silent !qlmanage -p %
 command! Lcd lcd %:p:h
+command! VRoom call VRoom()
