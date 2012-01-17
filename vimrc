@@ -115,9 +115,6 @@ nnoremap ]L :llast<CR>
 " open in Marked.app
 nnoremap <Leader>ma :silent !open -a Marked.app '%:p'<cr>
 
-" acp settings
-let g:acp_behaviorSnipmateLength = 1
-
 " Command-T settings
 let g:CommandTMaxHeight=15
 let g:CommandTMatchWindowReverse=1
@@ -152,8 +149,8 @@ let g:gist_open_browser_after_post = 1
 nnoremap <Leader>tu :GundoToggle<CR>
 inoremap <Leader>tu <Esc>:GundoToggle<CR>
 
-" mmd_vim settings
-let g:mmdOpenCommand = 'qlmanage -p'
+" snipmate settings
+let g:snips_trigger_key='§'
 
 " syntastic settings
 let g:syntastic_enable_signs=1
