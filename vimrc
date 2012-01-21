@@ -115,13 +115,15 @@ nnoremap ]L :llast<CR>
 " open in Marked.app
 nnoremap <Leader>ma :silent !open -a Marked.app '%:p'<cr>
 
-" Command-T settings
-let g:CommandTMaxHeight=15
-let g:CommandTMatchWindowReverse=1
-nnoremap <Leader>nt :tabnew<CR>:CommandT<CR>
-nnoremap <Leader>ns :vne<CR>:CommandT<CR>
-nnoremap <Leader>nh :sp<CR>:CommandT<CR>
-nnoremap <Leader>e :CommandT<CR>
+" CtrlP settings
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_extensions = ['tag']
+nnoremap <Leader>nt :tabnew<CR>:CtrlPCurWD<CR>
+nnoremap <Leader>ns :vne<CR>:CtrlPCurWD<CR>
+nnoremap <Leader>nh :sp<CR>:CtrlPCurWD<CR>
+nnoremap <Leader>e :CtrlPCurWD<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>ta :CtrlPTag<CR>
 
 " dim settings
 let g:DrupalDefaultRoot = '~/Sites/d7p'
