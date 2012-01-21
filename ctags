@@ -1,5 +1,5 @@
 -f ./tags
---langmap=php:+.engine.inc.install.module.php.test.theme
+--langmap=php:+.engine.inc.install.module.php.theme
 --recurse
 --exclude=coder
 --totals=yes
