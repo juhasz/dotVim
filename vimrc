@@ -141,6 +141,10 @@ nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>ge :Gedit<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gl :Git! log --pretty=format:'--- \%cr ---\%ncommit \%H\%n\%s\%n\%b\%n' %<CR>
+nnoremap <Leader>gL :Git! log --stat<CR>
+nnoremap <C-w><Leader>gl :vs<CR>:Git! log --pretty=format:'--- \%cr ---\%ncommit \%H\%n\%s\%n\%b\%n' %<CR>
+nnoremap <C-w><Leader>gL :vs<CR>:Git! log --stat<CR>
 
 " gist settings
 let g:gist_clip_command = 'pbcopy' "mac only
