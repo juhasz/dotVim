@@ -118,6 +118,7 @@ nnoremap <Leader>ma :silent !open -a Marked.app '%:p'<cr>
 " CtrlP settings
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
+let g:ctrlp_max_height = 15
 nnoremap <Leader>nt :tabnew<CR>:CtrlPCurWD<CR>
 nnoremap <Leader>ns :vne<CR>:CtrlPCurWD<CR>
 nnoremap <Leader>nh :sp<CR>:CtrlPCurWD<CR>
