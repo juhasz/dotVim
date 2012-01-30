@@ -177,7 +177,7 @@ let g:indent_guides_color_change_percent = 2
 
 " vimroom settings
 let g:vimroom_guibackground = '#fdf6e3'
-nnoremap <Leader>vr :call VRoom()<CR>
+nnoremap <Leader>vr :call VRoom()<CR>:setlocal textwidth=80<CR>
 
 " some toggle mappings
 nnoremap <Leader>tn :call VimrcToggle('number')<CR>
