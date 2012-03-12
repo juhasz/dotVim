@@ -257,3 +257,8 @@ autocmd bufwritepost vimrc source $MYVIMRC
 command! Ql w | silent !qlmanage -p %
 command! Lcd lcd %:p:h
 command! VRoom call VRoom()
+
+" edit NV notes
+command! NV edit ~/Library/Application\ Support/Notational\ Data/ | lcd ~/Library/Application\ Support/Notational\ Data/
+command! NVt tabnew ~/Library/Application\ Support/Notational\ Data/ | lcd ~/Library/Application\ Support/Notational\ Data/
+command! NVv vne ~/Library/Application\ Support/Notational\ Data/ | lcd ~/Library/Application\ Support/Notational\ Data/
