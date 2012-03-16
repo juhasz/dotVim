@@ -162,7 +162,6 @@ let g:snips_trigger_key='§'
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
-let g:syntastic_disabled_filetypes = ['html']
 
 " tagbar settings
 nnoremap <Leader>tt :TagbarToggle<CR>
@@ -242,10 +241,6 @@ autocmd FileType php syntax sync fromstart
 
 augroup markdown
   autocmd BufRead,BufNewFile *.txt set filetype=markdown
-  autocmd FileType markdown setlocal noexpandtab
-  autocmd FileType markdown setlocal tabstop=4
-  autocmd FileType markdown setlocal softtabstop=4
-  autocmd FileType markdown setlocal shiftwidth=4
   autocmd FileType markdown let b:listCharStyle=1
   autocmd FileType markdown call VimrcToggle('list')
 augroup END
