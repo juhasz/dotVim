@@ -162,6 +162,7 @@ let g:snips_trigger_key='§'
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
+let g:syntastic_phpcs_conf=" --standard=DrupalCodingStandard --extensions=php,module,inc,install,test,profile,theme"
 
 " tagbar settings
 nnoremap <Leader>tt :TagbarToggle<CR>
