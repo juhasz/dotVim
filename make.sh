@@ -20,6 +20,7 @@ touch bundle/vim_markdown/doc/EmptyFileForFixPathogen.txt
 # create symlinks for vimrc, gvimrc and ctags config file
 rm ~/.ctags
 ln -s $vimdir/vimrc ~/.vimrc.after
+ln -s $vimdir/vimrc.before ~/.vimrc.before
 ln -s $vimdir/gvimrc ~/.gvimrc.after
 ln -s $vimdir/ctags ~/.ctags
 
