@@ -111,7 +111,6 @@ nnoremap <Leader>nt :tabnew<CR>:CtrlPCurWD<CR>
 nnoremap <Leader>ns :vne<CR>:CtrlPCurWD<CR>
 nnoremap <Leader>nh :sp<CR>:CtrlPCurWD<CR>
 nnoremap <Leader>e :CtrlPCurWD<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>ta :CtrlPTag<CR>
 
 " gist settings
