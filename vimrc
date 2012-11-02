@@ -47,8 +47,8 @@ let g:PHP_autoformatcomment = 0
 set infercase
 
 " undo- and backupfiles
-set directory=~/.vim/backupdir//
-set undodir=~/.vim/undodir//
+set directory=~/dotVim/backupdir//
+set undodir=~/dotVim/undodir//
 set undofile
 
 " statusline
