@@ -196,6 +196,7 @@ augroup markdown
   autocmd BufRead,BufNewFile *.txt set filetype=markdown
   autocmd FileType markdown let b:listCharStyle=1
   autocmd FileType markdown call VimrcToggle('list')
+  autocmd FileType markdown set textwidth=80
 augroup END
 
 " Custom commands
