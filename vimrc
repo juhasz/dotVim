@@ -70,11 +70,6 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-nnoremap <c-l> <c-w>l
-nnoremap <c-h> <c-w>h
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-
 " search
 set ignorecase
 set smartcase
@@ -162,7 +157,7 @@ let g:snips_trigger_key='§'
 " syntastic settings
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
-let g:syntastic_phpcs_conf=" --standard=DrupalCodingStandard --extensions=php,module,inc,install,test,profile,theme"
+let g:syntastic_phpcs_conf=" --standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
 
 " tagbar settings
 nnoremap <Leader>tt :TagbarToggle<CR>
