@@ -193,6 +193,9 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType php set syntax=php.doxygen
 autocmd FileType php syntax sync fromstart
 
+autocmd BufRead,BufNewFile *.{module,install,test,inc,profile,php} setlocal formatoptions=clorq
+autocmd BufRead,BufNewFile *.{module,install,test,inc,profile,php} setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+
 augroup markdown
   autocmd BufRead,BufNewFile *.txt set filetype=markdown
   autocmd FileType markdown let b:listCharStyle=1
@@ -201,3 +204,4 @@ augroup END
 
 " Custom commands
 command! Lcd lcd %:p:h
+
