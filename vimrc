@@ -1,7 +1,3 @@
-set nocompatible
-set modelines=0
-let mapleader = ','
-
 set mouse=a
 filetype plugin on
 filetype indent on
