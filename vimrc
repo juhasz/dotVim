@@ -49,10 +49,10 @@ set laststatus=2
 set showcmd
 
 " navigation
-nnoremap <up> <C-W><up>
-nnoremap <down> <C-W><down>
-nnoremap <left> <C-W><left>
-nnoremap <right> <C-W><right>
+nnoremap <up> <C-W>+
+nnoremap <down> <C-W>-
+nnoremap <left> <C-W><
+nnoremap <right> <C-W>>
 vnoremap <up> <nop>
 vnoremap <down> <nop>
 vnoremap <left> <nop>
@@ -80,6 +80,8 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 " lazy commands
 set pastetoggle=<Leader>tp
 nnoremap <Space> :
+nnoremap git :Git
+nnoremap drush :!drush
 vnoremap <Space> :
 inoremap jk <Esc>
 inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
@@ -200,4 +202,6 @@ augroup END
 
 " Custom commands
 command! Lcd lcd %:p:h
+
+" Abbrevs
 
