@@ -10,9 +10,8 @@ call togglebg#map("<Leader>tb")
 
 " appereance
 syntax on
-set relativenumber
-set cursorline
-set cursorcolumn
+set nonumber
+set norelativenumber
 set wrap
 set linebreak
 set showbreak=…
@@ -85,6 +84,7 @@ nnoremap drush :!drush
 vnoremap <Space> :
 inoremap jk <Esc>
 inoremap <Leader>fn <C-R>=expand("%:t:r:r")<CR>
+nnoremap <D-t> :tabnew<CR>:CtrlP<CR>
 
 " open in Marked.app
 nnoremap <Leader>ma :silent !open -a Marked.app '%:p'<cr>
