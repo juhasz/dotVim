@@ -11,7 +11,9 @@ call togglebg#map("<Leader>tb")
 " appereance
 syntax on
 set nonumber
-set norelativenumber
+set relativenumber
+set cursorcolumn
+set cursorline
 set wrap
 set linebreak
 set showbreak=…
