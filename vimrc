@@ -4,6 +4,8 @@ filetype indent on
 
 " color settings (solarized)
 let g:solarized_diffmode="high"
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 set background=dark
 colorscheme solarized
 call togglebg#map("<Leader>tb")
