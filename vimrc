@@ -78,7 +78,7 @@ vnoremap / <esc>/\%V
 nnoremap <Leader>wr :%s/\s\+$//e<CR>
 
 " replace selected text
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+vnoremap <C-r> "hy:%s/<C-r>h//c<left><left><left>
 
 " lazy commands
 set pastetoggle=<Leader>tp
